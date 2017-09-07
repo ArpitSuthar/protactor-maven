@@ -50,7 +50,7 @@
             </goals>
             <phase>test</phase>
             <configuration>
-              <arguments>run test</arguments>
+              <arguments>run start</arguments>
             </configuration>
           </execution>
         </executions>

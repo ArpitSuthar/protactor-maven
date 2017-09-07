@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "setup": "webdriver-manager update",
-    "start": "webdriver-manager start",
-    "test": "protractor protractor.conf.js"
+    "start": "bash start-tests.sh"
   },
   "private": true,
   "dependencies": {
