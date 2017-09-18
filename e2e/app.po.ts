@@ -7,7 +7,7 @@ export class AppPage {
   }
 
   navigateTo() {
-    return browser.get('/protractor-demo/');
+    return browser.get('/');
   }
 
   getParagraphText() {

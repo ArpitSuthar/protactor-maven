@@ -9,6 +9,6 @@ describe('Protractor Demo App', () => {
 
   it('should have a title', () => {
     page.navigateTo();
-    expect(page.getTitle()).toEqual('Super Calculator');
+    expect(page.getTitle()).toEqual('Client');
   });
 });

@@ -9,9 +9,10 @@ exports.config = {
     './e2e/**/*.e2e-spec.ts'
   ],
   capabilities: {
-    browserName: 'htmlunit',
+    browserName: 'phantomjs',
+    javascriptEnabled: 'true'
   },
-  baseUrl: 'http://juliemr.github.io',
+  baseUrl: 'http://localhost:8080/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,
@@ -23,6 +24,5 @@ exports.config = {
       project: 'e2e/tsconfig.e2e.json'
     });
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-    browser.resetUrl='about:blank';
   }
 };
