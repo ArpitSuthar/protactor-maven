@@ -44,6 +44,15 @@
             </configuration>
           </execution>
           <execution>
+            <id>serenity-update</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <configuration>
+              <arguments>run pretest</arguments>
+            </configuration>
+          </execution>
+          <execution>
             <id>npm build</id>
             <goals>
               <goal>npm</goal>
@@ -51,6 +60,16 @@
             <phase>test</phase>
             <configuration>
               <arguments>run start</arguments>
+            </configuration>
+          </execution>
+          <execution>
+            <id>npm report</id>
+            <goals>
+              <goal>npm</goal>
+            </goals>
+            <phase>prepare-package</phase>
+            <configuration>
+              <arguments>run report</arguments>
             </configuration>
           </execution>
         </executions>
